@@ -1,0 +1,6 @@
+<div class="containor">
+    <div *ngFor="let pic of Photos">
+        <a [href]=" newUrl" target="_blank">
+            <img [src]="pic.url_s" (click)="imgClick(pic.url_s)"></a>
+    </div>
+</div>
